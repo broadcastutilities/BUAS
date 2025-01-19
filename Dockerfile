@@ -15,5 +15,9 @@ RUN apt update && apt upgrade -y && \
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
+EXPOSE 8000
+VOLUME [ "/var/log/icecast2" ]
+ENTRYPOINT [ "/entrypoint.sh" ]
+
 
 CMD  /etc/init.d/icecast2 start && tail -f /var/log/icecast2/error.log
