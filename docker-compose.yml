@@ -1,8 +1,22 @@
-version: '3.4'
+version: "3"
 
 services:
-  breezeicecast2:
+
+  icecast2:
     image: breezeicecast2
-    build:
-      context: .
-      dockerfile: ./Dockerfile
+    container_name: icecast2
+    restart: always
+    ports:
+      - 8000:8000
+    volumes:
+      - /path/to/your/icecast.xml:/etc/icecast2/icecast.xml
+    environment:
+      ICECAST_SOURCE_PASSWORD: your_source_password
+      ICECAST_ADMIN_PASSWORD: your_admin_password
+      ICECAST_RELAY_PASSWORD: your_relay_password
+      ICECAST_ADMIN_USERNAME: your_admin_username
+      ICECAST_ADMIN_EMAIL: your_admin_email
+      ICECAST_LOCATION: your_location
+      ICECAST_HOSTNAME: your_hostname
+      ICECAST_MAX_CLIENTS: your_max_clients
+      ICECAST_MAX_SOURCES: your_max_sources
