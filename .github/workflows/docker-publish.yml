@@ -51,6 +51,6 @@ jobs:
       - name: Generate artifact attestation
         uses: actions/attest-build-provenance@v2
         with:
-          subject-name: rikvisser/easy-icecast2
+          subject-name: docker.io/rikvisser/easy-icecast2
           subject-digest: ${{ steps.push.outputs.digest }}
           push-to-registry: true
