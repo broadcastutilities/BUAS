@@ -1,6 +1,6 @@
 FROM ubuntu:focal
 
-LABEL Name=breeze_icecast2 Version=0.0.1 maintainer="Rik Visser <r.visser@rikvissermedia.nl>" github="https://github.com/rikvisser-tech/breeze-icecast2"
+LABEL Name=easyicecast-2 maintainer="Rik Visser <r.visser@rikvissermedia.nl>" github="https://github.com/rikvisser-tech/easy-icecast2"
 
 RUN addgroup --system icecast2 && adduser --system --no-create-home --disabled-password --ingroup icecast2 icecast2
 
