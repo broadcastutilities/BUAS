@@ -1,0 +1,10 @@
+# This is a CODEOWNERS file for the repository
+
+# Specify the code owners for the repository
+# The following users or teams are responsible for code review and approval
+
+# Example:
+# * @username
+
+# Add the code owners below
+* @rikvisser-tech
