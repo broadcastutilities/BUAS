@@ -50,6 +50,16 @@ The Icecast2 server can be configured using environment variables. The following
 
 These environment variables can be set in the `docker-compose.yml` file.
 
+## Publishing to Docker Hub
+
+To publish the Docker image to Docker Hub, follow these steps:
+
+1. Create a new release on GitHub.
+2. The GitHub Actions workflow will automatically build and push the Docker image to Docker Hub.
+
+You can find the Docker image in your Docker Hub repository.
+
+
 ## Publishing to GitHub Packages
 
 To publish the Docker image to GitHub Packages, follow these steps:
