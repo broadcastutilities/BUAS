@@ -4,11 +4,11 @@ LABEL Name=easyicecast-2 maintainer="Rik Visser <r.visser@rikvissermedia.nl>" gi
 
 RUN addgroup --system icecast2 && adduser --system --no-create-home --disabled-password --ingroup icecast2 icecast2
 
-RUN apt update && apt upgrade -y && \
-    apt install -y icecast2 && \
+RUN apt-get update && apt-get upgrade -y && \
+    apt-get install -y icecast2 && \
     sed -i "s#ENABLE=.*#ENABLE=true#" /etc/default/icecast2 && \
     cat /etc/default/icecast2 && \
-    apt autoremove && apt clean && \
+    apt-get autoremove && apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
 
