@@ -1,7 +1,6 @@
-version: "3"
+
 
 services:
-
   icecast2:
     image: easy-icecast2
     container_name: easy-icecast2
