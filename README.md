@@ -1,6 +1,6 @@
 # Easy Icecast2
 
-Easy Icecast2 is a Docker-based solution for running an Icecast2 server. Icecast2 is a streaming media server which supports various streaming formats, including MP3, Ogg Vorbis, and Ogg Theora. This project simplifies the process of setting up and running an Icecast2 server using Docker and Docker Compose.
+Broadcast Utilities Audio-Server is a Docker-based solution for running an Icecast2 server. Icecast2 is a streaming media server which supports various streaming formats, including MP3, Ogg Vorbis, and Ogg Theora. This project simplifies the process of setting up and running an Icecast2 server using Docker and Docker Compose.
 
 ## Installation
 
@@ -14,7 +14,7 @@ Easy Icecast2 is a Docker-based solution for running an Icecast2 server. Icecast
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/rikvisser-tech/easy-icecast2.git
+   git clone https://github.com/broadcastutilities/audio-server.git
    cd easy-icecast2
    ```
 
@@ -32,7 +32,7 @@ To start the Icecast2 server, run the following command:
 docker-compose up -d
 ```
 
-This will start the Icecast2 server in detached mode. You can access the Icecast2 admin interface by navigating to `http://localhost:8000/admin` in your web browser.
+This will start the Icecast2 server in detached mode. You can access the Icecast2 admin interface by navigating to `http://127.0.0.1:8000/admin` or your public ip in your web browser.
 
 ## Configuration
 
