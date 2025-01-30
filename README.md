@@ -1,4 +1,4 @@
-# Easy Icecast2
+# Broadcast Utilities Audio-Server
 
 Broadcast Utilities Audio-Server is a Docker-based solution for running an Icecast2 server. Icecast2 is a streaming media server which supports various streaming formats, including MP3, Ogg Vorbis, and Ogg Theora. This project simplifies the process of setting up and running an Icecast2 server using Docker and Docker Compose.
 
