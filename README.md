@@ -1,6 +1,6 @@
 # Easy Icecast2
 
-Broadcast Utilities AudioServer is a Docker-based solution for running an Icecast2 server. Icecast2 is a streaming media server which supports various streaming formats, including MP3, Ogg Vorbis, and Ogg Theora. This project simplifies the process of setting up and running an Icecast2 server using Docker and Docker Compose.
+Broadcast Utilities Audio-Server is a Docker-based solution for running an Icecast2 server. Icecast2 is a streaming media server which supports various streaming formats, including MP3, Ogg Vorbis, and Ogg Theora. This project simplifies the process of setting up and running an Icecast2 server using Docker and Docker Compose.
 
 ## Installation
 
@@ -14,7 +14,7 @@ Broadcast Utilities AudioServer is a Docker-based solution for running an Icecas
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/rikvisser-tech/easy-icecast2.git
+   git clone https://github.com/broadcastutilities/audio-server.git
    cd easy-icecast2
    ```
 
