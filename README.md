@@ -32,7 +32,7 @@ To start the Icecast2 server, run the following command:
 docker-compose up -d
 ```
 
-This will start the Icecast2 server in detached mode. You can access the Icecast2 admin interface by navigating to `http://localhost:8000/admin` in your web browser.
+This will start the Icecast2 server in detached mode. You can access the Icecast2 admin interface by navigating to `http://127.0.0.1:8000/admin` or your public ip in your web browser.
 
 ## Configuration
 
