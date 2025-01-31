@@ -1,3 +1,22 @@
+# This GitHub Actions workflow is designed to publish a Docker image to GitHub Packages
+# whenever a new release is published in the repository.
+
+# The workflow is triggered by the 'release' event, specifically when a release is published.
+
+# The workflow consists of a single job named 'push_to_github_packages' which runs on the latest Ubuntu runner.
+
+# The job has the following permissions:
+# - Write access to packages
+# - Read access to repository contents
+# - Write access to the id-token
+
+# The job includes the following steps:
+# 1. Check out the repository using the actions/checkout@v4 action.
+# 2. Log in to GitHub Packages using the docker/login-action@v2 action with the GitHub actor's username and a GitHub token.
+# 3. Extract metadata (tags, labels) for the Docker image using the docker/metadata-action@v3 action.
+# 4. Build and push the Docker image using the docker/build-push-action@v3 action, with the context set to the root directory,
+#    the Dockerfile specified, and the tags and labels obtained from the metadata extraction step.
+
 name: Publish Docker image to GitHub Packages
 
 on:

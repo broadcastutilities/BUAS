@@ -1,11 +1,31 @@
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
+# This GitHub Actions workflow is designed to publish a Docker image to Docker Hub
+# whenever a new release is published in the repository.
 
-# GitHub recommends pinning actions to a commit SHA.
-# To get a newer version, you will need to update the SHA.
-# You can also reference a tag or branch, but the action may change without warning.
+# Workflow name: Publish Docker image to Docker Hub
+
+# Trigger:
+# - The workflow is triggered by the 'release' event, specifically when a release is published.
+
+# Jobs:
+# 1. push_to_registry:
+#    - Name: Push Docker image to Docker Hub
+#    - Runs on: ubuntu-latest
+#    - Permissions:
+#      - packages: write
+#      - contents: read
+#      - attestations: write
+#      - id-token: write
+#    - Steps:
+#      a. Check out the repository using the actions/checkout@v4 action.
+#      b. Log in to Docker Hub using the docker/login-action@f4ef78c080cd8ba55a85445d5b36e214a81df20a action.
+#         - Requires Docker Hub username and password stored in GitHub secrets (DOCKER_USERNAME and DOCKER_PASSWORD).
+#      c. Extract metadata (tags, labels) for Docker using the docker/metadata-action@9ec57ed1fcdbf14dcef7dfbe97b2010124a938b7 action.
+#         - The image name is specified as 'broadcastutilities/audio-server'.
+#      d. Build and push the Docker image using the docker/build-push-action@3b5e8027fcad23fda98b2e3ac259d8d67585f671 action.
+#         - The context is set to the root of the repository.
+#         - The Dockerfile is located at './Dockerfile'.
+#         - The image is pushed to Docker Hub.
+#         - Tags and labels are applied based on the metadata extracted in the previous step.
 
 name: Publish Docker image to Docker Hub
 
