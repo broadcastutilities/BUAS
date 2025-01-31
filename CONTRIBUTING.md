@@ -1,4 +1,5 @@
-# Welcome to Broadcast Utilities Audio-Server
+# Welcome to BUAS
+## Broadcast Utilities Audio Server
 
 ###  Contributing Guidelines
 Thank you for investing your time in contributing to our project! Any contribution you make will be reflected on Docker Hub✨
