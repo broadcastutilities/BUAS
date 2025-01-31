@@ -46,7 +46,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v3
         with:
-          images: ghcr.io/${{ github.repository_owner }}/audio-server
+          images: ghcr.io/${{ github.repository_owner }}/BUAS
 
       - name: Build and push Docker image
         id: push
