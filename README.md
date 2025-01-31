@@ -15,7 +15,7 @@ Broadcast Utilities Audio-Server is a Docker-based solution for running an Iceca
 
    ```sh
    git clone https://github.com/broadcastutilities/audio-server.git
-   cd easy-icecast2
+   cd audio-server
    ```
 
 2. Build the Docker image:
@@ -32,23 +32,23 @@ To start the Icecast2 server, run the following command:
 docker-compose up -d
 ```
 
-This will start the Icecast2 server in detached mode. You can access the Icecast2 admin interface by navigating to `http://127.0.0.1:8000/admin` or your public ip in your web browser.
+This will start the Icecast2 server in detached mode. You can access the Icecast2 admin interface by navigating to `http://127.0.0.1:8000/admin` or your public IP in your web browser. The default Icecast2 admin username is `admin`.
 
 ## Configuration
 
 The Icecast2 server can be configured using environment variables. The following environment variables are available:
 
-- `ICECAST_SOURCE_PASSWORD`: The source password for the Icecast2 server.
-- `ICECAST_ADMIN_PASSWORD`: The admin password for the Icecast2 server.
-- `ICECAST_RELAY_PASSWORD`: The relay password for the Icecast2 server.
-- `ICECAST_ADMIN_USERNAME`: The admin username for the Icecast2 server.
-- `ICECAST_ADMIN_EMAIL`: The admin email for the Icecast2 server.
-- `ICECAST_LOCATION`: The location of the Icecast2 server.
-- `ICECAST_HOSTNAME`: The hostname of the Icecast2 server.
-- `ICECAST_MAX_CLIENTS`: The maximum number of clients for the Icecast2 server.
-- `ICECAST_MAX_SOURCES`: The maximum number of sources for the Icecast2 server.
+- `ICECAST_SOURCE_PASSWORD` (default: `hackme`): The source password for the Icecast2 server.
+- `ICECAST_ADMIN_PASSWORD` (default: `hackme`): The admin password for the Icecast2 server.
+- `ICECAST_RELAY_PASSWORD` (default: `hackme`): The relay password for the Icecast2 server.
+- `ICECAST_ADMIN_USERNAME` (default: `admin`): The admin username for the Icecast2 server.
+- `ICECAST_ADMIN_EMAIL` (default: `admin@example.com`): The admin email for the Icecast2 server.
+- `ICECAST_LOCATION` (default: `Earth`): The location of the Icecast2 server.
+- `ICECAST_HOSTNAME` (default: `localhost`): The hostname of the Icecast2 server.
+- `ICECAST_MAX_CLIENTS` (default: `100`): The maximum number of clients for the Icecast2 server.
+- `ICECAST_MAX_SOURCES` (default: `10`): The maximum number of sources for the Icecast2 server.
 
-These environment variables can be set in the `docker-compose.yml` file.
+These environment variables can be set in the `docker-compose.yml` file. Here is an example:
 
 ## Publishing to Docker Hub
 
