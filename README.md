@@ -1,6 +1,7 @@
-# Broadcast Utilities Audio-Server
+# BUAS
+## Broadcast Utilities Audio Server
 
-Broadcast Utilities Audio-Server is a Docker-based solution for running an Icecast2 server. Icecast2 is a streaming media server which supports various streaming formats, including MP3, Ogg Vorbis, and Ogg Theora. This project simplifies the process of setting up and running an Icecast2 server using Docker and Docker Compose.
+BUAS is a Docker-based solution for running an Icecast2 server. Icecast2 is a streaming media server which supports various streaming formats, including MP3, Ogg Vorbis, and Ogg Theora. This project simplifies the process of setting up and running an Icecast2 server using Docker and Docker Compose.
 
 ## Installation
 
@@ -14,7 +15,7 @@ Broadcast Utilities Audio-Server is a Docker-based solution for running an Iceca
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/broadcastutilities/audio-server.git
+   git clone https://github.com/broadcastutilities/BUAS.git
    cd audio-server
    ```
 
@@ -57,7 +58,7 @@ To publish the Docker image to Docker Hub, follow these steps:
 1. Create a new release on GitHub.
 2. The GitHub Actions workflow will automatically build and push the Docker image to Docker Hub.
 
-You can find the Docker image in your Docker Hub repository.
+You can find the Docker image on [Docker Hub](https://hub.docker.com/r/broadcastutilities/buas)
 
 
 ## Publishing to GitHub Packages
@@ -71,7 +72,7 @@ You can find the Docker image in the GitHub Packages section of your repository.
 
 ## Contributing
 
-Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please open an issue or submit a pull request.
+Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please open an issue or submit a pull request. Check first the [Contributing Guidelines](CONTRIBUTING.md).
 
 ## License
 
