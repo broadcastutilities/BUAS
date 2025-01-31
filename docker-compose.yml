@@ -1,8 +1,8 @@
 version: '3.4'
 
 services:
-  breezeicecast2:
-    image: breezeicecast2
+  audio-server:
+    image: bu-audioserver
     build:
       context: .
       dockerfile: ./Dockerfile
