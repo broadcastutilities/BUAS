@@ -1,8 +1,18 @@
 version: '3.4'
 
 services:
-  breezeicecast2:
-    image: breezeicecast2
+  audio-server:
+    image: audio-server
     build:
       context: .
       dockerfile: ./Dockerfile
+    environment:
+      - ICECAST_SOURCE_PASSWORD=your_source_password
+      - ICECAST_ADMIN_PASSWORD=your_admin_password
+      - ICECAST_RELAY_PASSWORD=your_relay_password
+      - ICECAST_ADMIN_USERNAME=admin
+      - ICECAST_ADMIN_EMAIL=admin@example.com
+      - ICECAST_LOCATION=Your Location
+      - ICECAST_HOSTNAME=localhost
+      - ICECAST_MAX_CLIENTS=100
+      - ICECAST_MAX_SOURCES=2
