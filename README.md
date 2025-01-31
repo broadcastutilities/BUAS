@@ -58,7 +58,7 @@ To publish the Docker image to Docker Hub, follow these steps:
 1. Create a new release on GitHub.
 2. The GitHub Actions workflow will automatically build and push the Docker image to Docker Hub.
 
-You can find the Docker image in your Docker Hub repository.
+You can find the Docker image on [Docker Hub](https://hub.docker.com/r/broadcastutilities/buas)
 
 
 ## Publishing to GitHub Packages
