@@ -1,3 +1,11 @@
+# This is a Docker Compose file for defining and running multi-container Docker applications.
+# The version specifies the Compose file format version.
+# 
+# Services:
+# - breezeicecast2: This service uses the 'breezeicecast2' image.
+#   - build: Specifies the build configuration for the service.
+#     - context: The build context, which is the directory containing the Dockerfile.
+#     - dockerfile: The path to the Dockerfile used to build the image.
 version: '3.4'
 
 services:
