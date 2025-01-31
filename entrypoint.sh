@@ -1,3 +1,21 @@
+# This script configures Icecast server settings based on environment variables.
+# It updates the Icecast configuration file (/etc/icecast2/icecast.xml) with the provided values.
+#
+# Environment variables:
+# - ICECAST_SOURCE_PASSWORD: Password for source clients.
+# - ICECAST_RELAY_PASSWORD: Password for relay clients.
+# - ICECAST_ADMIN_PASSWORD: Password for admin access.
+# - ICECAST_ADMIN_USERNAME: Username for admin access.
+# - ICECAST_ADMIN_EMAIL: Email address for admin contact.
+# - ICECAST_LOCATION: Location of the Icecast server.
+# - ICECAST_HOSTNAME: Hostname of the Icecast server.
+# - ICECAST_MAX_CLIENTS: Maximum number of clients.
+# - ICECAST_MAX_SOURCES: Maximum number of sources.
+#
+# The script uses `sed` to replace the corresponding XML tags in the configuration file with the values of the environment variables.
+# If an environment variable is not set, the corresponding XML tag remains unchanged.
+#
+# Finally, the script executes the command passed as arguments to the script.
 #!/bin/sh
 
 if [ -n "$ICECAST_SOURCE_PASSWORD" ]; then
