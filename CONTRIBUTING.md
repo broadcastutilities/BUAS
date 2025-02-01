@@ -1,5 +1,4 @@
-# Welcome to BUAS
-## Broadcast Utilities Audio Server
+# Welcome to BUicecast
 
 ###  Contributing Guidelines
 Thank you for investing your time in contributing to our project! Any contribution you make will be reflected on Docker Hub✨
@@ -15,7 +14,7 @@ If you look for a good issue to get started, check the label 'Good First Issue'.
 ### Issues
 
 #### Create a new issue
-If you spot a bug or have an idea to make Easy Icecast2 better, open a new issue. Check before if a issue already exists, if a relevant issue exists, please don't make a duplicate issue.
+If you spot a bug or have an idea to make BUicecast better, open a new issue. Check before if a issue already exists, if a relevant issue exists, please don't make a duplicate issue.
 
 #### Solve an issue
 Scan through our existing issue to find one that interests you. If you find an issue to work on, you are welcome to open a PR with a fix.
