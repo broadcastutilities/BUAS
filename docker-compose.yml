@@ -10,7 +10,7 @@ version: '3.4'
 
 services:
   audio-server:
-    image: audio-server
+    image: BUicecast
     build:
       context: .
       dockerfile: ./Dockerfile
