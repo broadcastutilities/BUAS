@@ -46,7 +46,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v3
         with:
-          images: ghcr.io/${{ github.repository_owner }}/BUAS
+          images: ghcr.io/${{ github.repository_owner }}/BUicecast
 
       - name: Build and push Docker image
         id: push
